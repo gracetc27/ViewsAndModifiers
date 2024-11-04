@@ -1,5 +1,5 @@
 # ViewsAndModifiers 
-Technique project 1 in my 100 days of SwiftUI- Hacking with Swift journey. This code looks at views and modifiers in a bit more depth to previous projects on this course.
+Project 3 in my 100 days of SwiftUI- Hacking with Swift journey. This was the first technique project in the course. This code looks at views and modifiers in a bit more depth to previous projects on this course.
 # Features
 - Investigating why modifier order matters.
 - Conditional modifiers.
