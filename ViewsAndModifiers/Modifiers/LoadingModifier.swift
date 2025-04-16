@@ -47,9 +47,14 @@ struct LoadingModifier: View {
                 isPresented = true
             }
         }
-            .loading(isPresented: isPresented)
+        .loading(isPresented: isPresented)
     }
 }
+
+
+
+
+
 
 #Preview {
     LoadingModifier()
