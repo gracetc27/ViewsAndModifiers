@@ -47,6 +47,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A34A2F3A2DAFB96A00698958 /* Modifiers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modifiers; sourceTree = "<group>"; };
 		A34A2F3B2DAFB9D400698958 /* Containers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Containers; sourceTree = "<group>"; };
+		A34A2F422DAFD96700698958 /* Styles */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Styles; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		A3B00B762C493CB800540F8C /* ViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				A34A2F422DAFD96700698958 /* Styles */,
 				A34A2F3B2DAFB9D400698958 /* Containers */,
 				A34A2F3A2DAFB96A00698958 /* Modifiers */,
 				A3B00B772C493CB800540F8C /* ViewsAndModifiersApp.swift */,
@@ -149,6 +151,7 @@
 			fileSystemSynchronizedGroups = (
 				A34A2F3A2DAFB96A00698958 /* Modifiers */,
 				A34A2F3B2DAFB9D400698958 /* Containers */,
+				A34A2F422DAFD96700698958 /* Styles */,
 			);
 			name = ViewsAndModifiers;
 			productName = ViewsAndModifiers;

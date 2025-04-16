@@ -11,7 +11,7 @@ import SwiftUI
 struct GridStack<Content: View>: View {
     let columns: Int
     let rows: Int
-    @ViewBuilder  let content: (Int, Int) -> Content
+    @ViewBuilder let content: (Int, Int) -> Content
 
 
     var body: some View {
