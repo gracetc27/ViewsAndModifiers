@@ -3,18 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A3B00B782C493CB800540F8C /* ViewsAndModifiersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00B772C493CB800540F8C /* ViewsAndModifiersApp.swift */; };
-		A3B00B7A2C493CB800540F8C /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00B792C493CB800540F8C /* CustomModifier.swift */; };
 		A3B00B7C2C493CBA00540F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B00B7B2C493CBA00540F8C /* Assets.xcassets */; };
 		A3B00B7F2C493CBA00540F8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B00B7E2C493CBA00540F8C /* Preview Assets.xcassets */; };
 		A3B00B892C493CBA00540F8C /* ViewsAndModifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00B882C493CBA00540F8C /* ViewsAndModifiersTests.swift */; };
 		A3B00B932C493CBA00540F8C /* ViewsAndModifiersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00B922C493CBA00540F8C /* ViewsAndModifiersUITests.swift */; };
 		A3B00B952C493CBA00540F8C /* ViewsAndModifiersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00B942C493CBA00540F8C /* ViewsAndModifiersUITestsLaunchTests.swift */; };
-		A3B00BA22C494DEE00540F8C /* CustomContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00BA12C494DEE00540F8C /* CustomContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +35,6 @@
 /* Begin PBXFileReference section */
 		A3B00B742C493CB800540F8C /* ViewsAndModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewsAndModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B00B772C493CB800540F8C /* ViewsAndModifiersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersApp.swift; sourceTree = "<group>"; };
-		A3B00B792C493CB800540F8C /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		A3B00B7B2C493CBA00540F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3B00B7E2C493CBA00540F8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3B00B842C493CBA00540F8C /* ViewsAndModifiersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsAndModifiersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +42,12 @@
 		A3B00B8E2C493CBA00540F8C /* ViewsAndModifiersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsAndModifiersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B00B922C493CBA00540F8C /* ViewsAndModifiersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersUITests.swift; sourceTree = "<group>"; };
 		A3B00B942C493CBA00540F8C /* ViewsAndModifiersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsAndModifiersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A3B00BA12C494DEE00540F8C /* CustomContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A34A2F3A2DAFB96A00698958 /* Modifiers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modifiers; sourceTree = "<group>"; };
+		A34A2F3B2DAFB9D400698958 /* Containers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Containers; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3B00B712C493CB800540F8C /* Frameworks */ = {
@@ -96,9 +97,9 @@
 		A3B00B762C493CB800540F8C /* ViewsAndModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				A34A2F3B2DAFB9D400698958 /* Containers */,
+				A34A2F3A2DAFB96A00698958 /* Modifiers */,
 				A3B00B772C493CB800540F8C /* ViewsAndModifiersApp.swift */,
-				A3B00B792C493CB800540F8C /* CustomModifier.swift */,
-				A3B00BA12C494DEE00540F8C /* CustomContainer.swift */,
 				A3B00B7B2C493CBA00540F8C /* Assets.xcassets */,
 				A3B00B7D2C493CBA00540F8C /* Preview Content */,
 			);
@@ -144,6 +145,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A34A2F3A2DAFB96A00698958 /* Modifiers */,
+				A34A2F3B2DAFB9D400698958 /* Containers */,
 			);
 			name = ViewsAndModifiers;
 			productName = ViewsAndModifiers;
@@ -194,7 +199,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					A3B00B732C493CB800540F8C = {
 						CreatedOnToolsVersion = 16.0;
@@ -260,8 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3B00B7A2C493CB800540F8C /* CustomModifier.swift in Sources */,
-				A3B00BA22C494DEE00540F8C /* CustomContainer.swift in Sources */,
 				A3B00B782C493CB800540F8C /* ViewsAndModifiersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +337,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DG4449RVDY;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -397,6 +401,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = DG4449RVDY;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -426,7 +431,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiers/Preview Content\"";
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -455,7 +459,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ViewsAndModifiers/Preview Content\"";
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -482,7 +485,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -501,7 +503,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -519,7 +520,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gc.ViewsAndModifiersUITests;
@@ -536,7 +536,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DG4449RVDY;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gc.ViewsAndModifiersUITests;

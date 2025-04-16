@@ -1,5 +1,5 @@
 //
-//  CustomModifier.swift
+//  WatermarkModifier.swift
 //  ViewsAndModifiers
 //
 //  Created by Grace couch on 18/07/2024.
@@ -27,7 +27,7 @@ extension View {
 }
 
 
-struct CustomModifier: View {
+struct WatermarkModifier: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             Color.blue
@@ -38,5 +38,5 @@ struct CustomModifier: View {
 }
 
 #Preview {
-    CustomModifier()
+    WatermarkModifier()
 }
