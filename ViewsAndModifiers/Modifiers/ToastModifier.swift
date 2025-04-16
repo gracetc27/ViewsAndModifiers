@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Toast: ViewModifier {
     var text: String
-    @Binding var isPresented: Bool
+    let isPresented: Bool
     func body(content: Content) -> some View {
         ZStack {
 
@@ -29,7 +29,7 @@ struct Toast: ViewModifier {
 }
 
 extension View {
-    func toast(_ text: String, isPresented: Binding<Bool>) -> some View {
+    func toast(_ text: String, isPresented: Bool) -> some View {
         modifier(Toast(text: text, isPresented: isPresented))
     }
 }
@@ -42,7 +42,7 @@ struct ToastModifier: View {
                 isPresented.toggle()
             }
         }
-        .toast("Toast is yummy!", isPresented: $isPresented)
+        .toast("Toast is yummy!", isPresented: isPresented)
     }
 }
 
